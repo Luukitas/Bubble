@@ -1,7 +1,8 @@
 let item = [7, 2, 5, 1, 2, 3];
 let tamanho = item.length;
 
-function bubble() {
+//Exemplo o do/while
+/*function bubble() {
     let val;
     do {
         val = false;
@@ -14,6 +15,22 @@ function bubble() {
             }
         }
     }while(val)
+}*/
+
+
+function bubble(item){
+    let tam = item.length;
+    for(let i = 0; i < tam; i++){
+        for(let j = 0; j < tam; j++){
+            if(item[j] > item[j + 1]){
+                let aux;
+                aux = item[j];
+                item[j] = item[j+1];
+                item[j+1] = aux;
+            }
+        }
+    }
+    return item;
 }
 
 bubble();
