@@ -18,7 +18,7 @@ let tamanho = item.length;
 }*/
 
 
-function bubble(item){
+function bubble(){
     let tam = item.length;
     for(let i = 0; i < tam; i++){
         for(let j = 0; j < tam; j++){
@@ -30,7 +30,7 @@ function bubble(item){
             }
         }
     }
-    return item;
+    return item
 }
 
 bubble();
